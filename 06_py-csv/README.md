@@ -1,5 +1,5 @@
-Trio of Success: Raymond Yeung, Annabel Zhang, Thomas Yu
-Explanation of K06
+# Trio of Success: Raymond Yeung, Annabel Zhang, Thomas Yu
+# Explanation of K06
 
 ---
 
@@ -23,4 +23,4 @@ Github-Flavored Markdown
 * [This may be useful.](https://guides.github.com/features/mastering-markdown/)
 
 Weighted Randomized Selection
-*
+* [tba]
