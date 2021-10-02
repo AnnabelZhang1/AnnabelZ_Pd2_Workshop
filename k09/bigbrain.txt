@@ -1,6 +1,6 @@
-[tnpg] - Annabel Zhang(Mang), Han Zhang(--)
+The Horse and the Bear - Annabel Zhang(Mang), Han Zhang(Sirap)
 SoftDev
-K09: First Flask App Q/C/C
+K09: First Flask App Q/C/C 
 2021-10-02
 
 Q0: 
