@@ -1,0 +1,14 @@
+The Horse and the Bear - Annabel Zhang(Mang), Han Zhang(Sirap)
+SoftDev
+K09: First Flask App Q/C/C 
+2021-10-02
+
+Q0: Reminds me of creating an object from a certain class in Java
+Q1: "/" usually denotes file pathing
+Q2: It should print the name of the program somewhere in bash/terminal.
+Q3: This should appear on the app or website, in this case http://127.0.0.1:5000/ .
+Q4: This syntax reminds me of Java when you call a function from a class. app would be the object and run() would be the function.
+
+After running:
+- http://127.0.0.1:5000/ gives nothing from local pc; maybe it will work on a lab computer?
+- Update: created a venv on local pc and ran app.py, the url displays "No hablo queso!"
