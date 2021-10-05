@@ -1,6 +1,7 @@
-# Clyde 'Thluffy' Sinclair
+# Trio Of Success: Raymond Yeung, Thomas Yu, Annabel Zhang
+# K10 -- Flask Testing
 # SoftDev
-# Oct 2021
+# 2021-10-04
 
 from flask import Flask
 app = Flask(__name__) # Q0: Where have you seen similar syntax in other langs?
@@ -12,3 +13,7 @@ def hello_world():
 
 app.run()  # Q4: Where have you seen similar construcs in other languages?
                 
+#This is the same as the assignment from K09
+#app.run() runs the entire program
+#In the terminal on the school machines, "__main__" is printed when the website is accessed
+#On my home machine (Windows), "__main__" is printed after I quit

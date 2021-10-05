@@ -14,3 +14,6 @@ def hello_world():
 if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change
     app.run()
+
+#If the file is not imported, __name__ is __main__ by default
+#The file should run the exact same as v3
