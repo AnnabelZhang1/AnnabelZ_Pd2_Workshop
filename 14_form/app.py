@@ -26,15 +26,15 @@ PROTIP: Insert your own in-line comments wherever they will help your future sel
 @app.route("/") #, methods=['GET', 'POST'])
 def disp_loginpage():
     print("\n\n\n")
-    print("***DIAG: this Flask obj ***")
+    print("***DIAG: this Flask obj ***") # (app) refers to program name
     print(app)
     print("***DIAG: request obj ***") # route at which the url is being submitted
     print(request)
-    print("***DIAG: request.args ***")
-    print(request.args) # the information submitted in the request
-    #print("***DIAG: request.args['username']  ***")
+    print("***DIAG: request.args ***") # the information submitted in the request, stored as a dictionary
+    print(request.args)
+    #print("***DIAG: request.args['username']  ***") # the information inputted
     #print(request.args['username'])
-    print("***DIAG: request.headers ***")
+    print("***DIAG: request.headers ***") # returns the rest of the page assets, including the host, browser, and platform
     print(request.headers)
     return render_template( 'login.html' ) #returns template for login page
 
@@ -48,15 +48,15 @@ def authenticate():
     print(request)
     print("***DIAG: request.args ***")
     print(request.args)
-    #print("***DIAG: request.args['username']  ***")
+    print("***DIAG: request.args['username']  ***")
     #print(request.args['username'])
-    print("***DIAG: request.headers ***")
+    #print("***DIAG: request.headers ***")
     print(request.headers)
     return render_template('response.html', username=request.args["username"], reqMethod=request.method)  #response to a form submission
 
 
-    
+
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
-    app.debug = True 
+    app.debug = True
     app.run()
