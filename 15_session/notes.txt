@@ -14,6 +14,9 @@ is a post or a get method to determine whether to use .args or .form.
 We are not yet sure why it really matters what the difference is. We
 have yet to create a session.
 
+5:53PM - We have created a login session! Method can be specified in
+<form action> to ensure the right method is being used.
+
 Cookies! Stored locally! Server maintains the cookies, client uses them.
 request.cookies.get('username') same as -> request.form['username']
 Sessions in flask

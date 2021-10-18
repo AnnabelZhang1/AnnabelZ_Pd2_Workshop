@@ -3,12 +3,7 @@
 # K15 -- Making a Login Page
 # 2021-10-18
 
-from flask import Flask             #facilitate flask webserving
-from flask import render_template   #facilitate jinja templating
-from flask import request           #facilitate form submission
-
-#the conventional way:
-#from flask import Flask, render_template, request
+from flask import Flask, render_template, request
 
 app = Flask(__name__)    #create Flask object
 
