@@ -6,7 +6,7 @@
 # configures flask so that each user gets their own version of the session
 from flask import Flask, render_template, request, redirect, session
 # creates an instance of session
-from flask_session import Session
+#from flask_session import Session
 
 app = Flask(__name__)    #create Flask object
 
