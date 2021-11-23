@@ -1,0 +1,18 @@
+The Sad Hatters: Noakai Aronesty, Annabel Zhang
+SoftDev pd2
+K19 -- A RESTful Journey Skyward
+2021-11-23
+
+HTTP Request
+- JSON is stored as a dictionary, which allows for easy access to the dictionary's
+information via keys
+- Very nice picture
+- Looks easy to parse in a program
+- Dev Console has some style
+
+App
+- There's urllib, urllib2, and urllib3; urllib and urllib2 are in CPython's
+standard library, while urllib3 is not. The difference between urllib and urllib2
+is that urllib2 is an updated version "that can be extended by defining
+custom protocol handlers"
+- json lib is nice
