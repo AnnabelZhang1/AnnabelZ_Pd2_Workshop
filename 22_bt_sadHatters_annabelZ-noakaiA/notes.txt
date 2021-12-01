@@ -1,0 +1,13 @@
+The Sad Hatters: Annabel Zhang, Noakai Aronesty
+SoftDev
+SoftDev K22 -- Who Does Frame Work For?
+2021-11-30
+time spent: 2h
+
+- Very convenient to be able to access a lot of classes and features using just a few imported links
+- Because there are so many classes, it doesn't feel that much easier than just using css, but it looks a lot better
+- Many features are made a lot easier like text alignment and keeping a consistent distance from screen edges
+- Better default fonts
+- Annoyingly limited number of container colors in default package
+- Make everything an alert, they look the best and allow for more container colors
+- Put everything in a container for screen edge distances

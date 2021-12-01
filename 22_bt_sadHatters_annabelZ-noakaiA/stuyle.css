@@ -1,0 +1,17 @@
+/*    The Sad Hatters: Annabel Zhang, Noakai Aronesty
+    SoftDev
+    SoftDev K22 -- Who Does Frame Work For?
+    2021-11-30
+    time spent: 2h
+*/
+
+* {
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
