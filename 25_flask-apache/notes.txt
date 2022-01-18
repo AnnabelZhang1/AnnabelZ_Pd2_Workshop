@@ -1,0 +1,106 @@
+get domain name from names.com
+create new record w/ @ as hostname (bc @ directs to original link 'snickerdoodle.live')
+direct it to your droplet
+sudo ufw allow 5000
+create folder in root@droplet
+nano [filename]
+python [filename]
+apt install python3-venv (sudo it if not root user)
+python3 -m venv env1 (make virtual env)
+. env1/bin/activate
+pip install Flask
+python3 [filename]
+
+if using name.com
+my domains -> quick links -> manage nameservers -> replace w/ digitalocean's
+delete the period at the end of the name
+add www. hostname too on DO
+try website
+
+see the default page
+
+cd /var/www/html
+rm index.html
+cd ~/
+python test.py
+open port 5000
+and the website should show up!
+
+1/15/2022 - making a new user
+adduser azhang22
+usermod -aG sudo azhang22
+ssh azhang22@Snickerdoodle
+
+
+sudo nohup env1/bin/python test.py > log.txt 2>&1 &
+ps -ef |grep nohup (to find PID)
+kill second column's number (grep cannot be killed)
+kill [pid]
+
+to redirect home page:
+<meta http-equiv="refresh" content="0; url='http://snickerdoodle.live:5000'" />
+0 - 0 seconds
+
+1/16/2022
+<VirtualHost *:80>
+		ServerName snickerdoodle.live
+		ServerAdmin admin@snickerdoodle.live
+		WSGIScriptAlias / /var/www/FlaskApp/flaskapp.wsgi
+		<Directory /var/www/FlaskApp/FlaskApp/>
+			Order allow,deny
+			Allow from all
+		</Directory>
+		Alias /static /var/www/FlaskApp/FlaskApp/static
+		<Directory /var/www/FlaskApp/FlaskApp/static/>
+			Order allow,deny
+			Allow from all
+		</Directory>
+		ErrorLog ${APACHE_LOG_DIR}/error.log
+		LogLevel warn
+		CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+#!/usr/bin/python
+import sys
+import logging
+logging.basicConfig(stream=sys.stderr)
+sys.path.insert(0,"/var/www/FlaskApp/")
+
+from FlaskApp import app as application
+application.secret_key = 'souljam'
+
+ono "Job for apache2.service failed because the control process exited with error code."
+cd /etc/apache2
+ono
+sudo apt-get purge apache2
+sudo apt-get install apache2
+
+
+sudo service apache2 restart <-----
+systemctl (NOT 1)
+
+sudo apt-get install apache2
+sudo apt-get install libapache2-mod-wsgi-py3 python-dev
+
+
+"internal error"
+
+1/17/2022
+nano tail /var/log/apache2/error.log
+
+export FLASK_APP = sample.py
+flask run
+
+1/18/2022:
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04
+
+sudo apt update
+sudo apt install apache2
+sudo ufw allow in "Apache"
+
+replace in .wgsi:
+from FlaskApp import app as application
+
+SHOULD BE:
+sudo apt-get install libapache2-mod-wsgi-py3 python-dev
+originally tried sudo apt-get install libapache2-mod-wsgi
