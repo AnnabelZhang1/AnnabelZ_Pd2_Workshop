@@ -1,0 +1,9 @@
+Get ssh key w/:
+cat ~/.ssh/id_rsa.pub
+
+Droplet automatically on, will start charging (Even though credits cannot be viewed atm)
+
+apt-get update
+apt install apache2
+
+No errors!
