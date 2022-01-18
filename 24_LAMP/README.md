@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # how-to :: Create a Droplet with Ubuntu and Apache2
 ---
 ## Overview
@@ -6,10 +5,7 @@
 
 ### Estimated Time Cost: 20 mins
 
-### Prerequisites:
-
-- Something you should know beforehand...
-- Something you will need installed beforehand...
+### The How-To
 
 1. Create the Droplet on DigitalOcean, with prerequisites below:
 - Ubuntu 20.04
@@ -21,6 +17,7 @@
 - Run `cat ~/.ssh/id_rsa.pub` and copy/paste the key into the box given
 3. The droplet should be automatically on; head over to Droplets -> [your droplet] -> Access -> Launch Droplet Console
 4. Now that you're in the terminal, run `apt-get update` and `apt install apache2` to update Ubuntu and install Apache
+5. Copy/paste your droplet's public ip (ipv4) into a browser. If you see the Apache Default Page, it works!
 
 
 
@@ -33,6 +30,3 @@ Accurate as of (last update): 2021=2-01-18
 
 #### Contributors:  
 Annabel Zhang, pd2  
-=======
-testingg
->>>>>>> a57c7ed7cdc3f1e2bcc7f7b93fdfc53c6f3871ae
