@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # how-to :: Create a Droplet with Ubuntu and Apache2
 ---
 ## Overview
@@ -32,3 +33,6 @@ Accurate as of (last update): 2021=2-01-18
 
 #### Contributors:  
 Annabel Zhang, pd2  
+=======
+testingg
+>>>>>>> a57c7ed7cdc3f1e2bcc7f7b93fdfc53c6f3871ae
