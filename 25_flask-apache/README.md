@@ -99,7 +99,7 @@ Save and exit. Your directory structure should be as such now:
 |----------------flaskapp.wsgi
 ```
 17. Restart Apache with `sudo service apache2 restart` to apply your changes
-18. Open your browser and enter your droplet ip address or domain in. Your website will now output whatever you wrote in __init__.py!
+18. Open your browser and enter your droplet ip address or domain in. Your website will now output whatever you wrote in `__init__.py`!
 
 ### Resources
 * https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
