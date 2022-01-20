@@ -1,7 +1,7 @@
 # how-to :: Add Flask and Host w/ Apache
 ---
 ## Overview
-  Guide to installing Flask for Py apps and getting them to run on apache
+  Guide to installing Flask for Py apps and getting them to run on Apache
 
 ### Estimated Time Cost: 20 mins
 
@@ -34,7 +34,7 @@ Your directory structure should be as such now:
 |--------------static
 |--------------templates
 ```
-5. Create an __init__.py file in this second FlaskApp folder with `sudo nano __init__.py`
+5. Create an `__init__.py` file in this second FlaskApp folder with `sudo nano __init__.py`
 6. Add this code to the file, save(Ctrl + S), and exit(Ctrl + X).
 ```
 from flask import Flask
@@ -106,7 +106,7 @@ Save and exit. Your directory structure should be as such now:
 
 ---
 
-Accurate as of (last update): 2022-01-18
+Accurate as of (last update): 2022-01-19
 
 #### Contributors:  
 Annabel Zhang, pd2  
