@@ -1,0 +1,14 @@
+Team Tofu :: Annabel Zhang, Justin Zou
+SoftDev pd2
+K27 -- Basic functions in JavaScript
+2022-02-04
+
+DISCO
+-----------------------------------------------------------------
+* JS is not actually entirely java syntax; JS defines a function with `function [method](var){}`
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* How do you even start
+=================================================================
