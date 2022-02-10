@@ -1,0 +1,18 @@
+document.getElementById(<ID>)
+//.//TagName
+
+.addEventListener(<EVENT>, <FUNCTION>)
+ex: 
+<button id = "b"> Button </button>
+var a = document.getElementById()
+a.addEventListener('click', fxnName)
+
+document.createElement(<html tag>)
+element.setAttribute(<Name>, <Value>)
+element.getAttribute(<Name>)
+
+To Manipulate Elements:
+element.remove()
+element.innerHTML
+element.appendChild(<Element>)
+element.addEventListener(<Event>, <Function>)
