@@ -1,3 +1,8 @@
+// Annabel Zhang, Justin Zou :: Team Tofu
+// SoftDev pd2
+// K30 -- canvas based JS drawing
+// 2022-02-14
+
 //retrieve node in DOM via ID
 var c = document.getElementById('slate');
 
