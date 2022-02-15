@@ -1,4 +1,4 @@
-// Team Tofu :: Jesse Wang, Annabel Zhang, Justin Zou
+// Team Tofu :: Jesse Xie, Annabel Zhang, Justin Zou
 // SoftDev pd2
 // K28 -- Getting more comfortable with the dev console and the DOM
 // 2022-02-08
