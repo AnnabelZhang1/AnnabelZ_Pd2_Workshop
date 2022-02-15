@@ -75,6 +75,9 @@ function fib(n){
   return (fib(n-1) + fib(n-2))
  }
 
+ document.getElementById("fib".innerText=fib(10));
+ // window.onload = fib(getRandom(10));
+
 function fact(n){
   if (n == 0)
     return 1
