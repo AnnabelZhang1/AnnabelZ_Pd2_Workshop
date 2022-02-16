@@ -35,7 +35,6 @@ var growing = true;
 
 //var drawDot = function() {
 var drawDot = () => {
-  // if (growing){
     console.log("drawDot invoked...")
     console.log(radius);
 
@@ -46,34 +45,21 @@ var drawDot = () => {
       ctx.beginPath();
       ctx.arc(c.clientWidth/2, c.clientHeight/2, radius, 0, 360);
       ctx.fill();
-      if (radius >= 0 && radius < c.clientHeight/2){
+
+      if (radius === 0){
         growing = true;
-        requestID = window.requestAnimationFrame(drawDot);
       }
-      else{
+      else if (radius === c.clientHeight/2){
         growing = false;
-        requestID = window.cancelAnimationFrame(drawDot);
       }
+      
+      if (requestID){
+        window.cancelAnimationFrame(requestID);
+      }
+      requestID = window.requestAnimationFrame(drawDot);
 
 
-
-
-
-
-      // if (radius === c.clientHeight/2){
-      //   radius-=1;
-      // }
-
-      // if (radius === c.clientHeight/2){
-      //   clear();
-      //   window.cancelAnimationFrame(requestID);
-      //   growing = false;
-      // }
-
-
-  // }
 };
-
 
 
   /*
@@ -97,7 +83,6 @@ var stopIt = () => {
   console.log(requestID);
 
   window.cancelAnimationFrame(requestID);
-
 };
 
 
