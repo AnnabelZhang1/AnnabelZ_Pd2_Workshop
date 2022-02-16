@@ -35,16 +35,44 @@ var growing = true;
 
 //var drawDot = function() {
 var drawDot = () => {
-  console.log("drawDot invoked...")
+  // if (growing){
+    console.log("drawDot invoked...")
+    console.log(radius);
 
-  // clear()
-  // window.requestAnimationFrame();
-  ctx.beginPath();
-  ctx.arc(0, 0, radius, 0, 360);
-  // ctx.fillStyle = "red";
-  ctx.fill();
-  radius += 1;
-  requestID = window.requestAnimationFrame();
+      if (growing) {radius += 1}
+      else {radius -= 1}
+
+      clear();
+      ctx.beginPath();
+      ctx.arc(c.clientWidth/2, c.clientHeight/2, radius, 0, 360);
+      ctx.fill();
+      if (radius >= 0 && radius < c.clientHeight/2){
+        growing = true;
+        requestID = window.requestAnimationFrame(drawDot);
+      }
+      else{
+        growing = false;
+        requestID = window.cancelAnimationFrame(drawDot);
+      }
+
+
+
+
+
+
+      // if (radius === c.clientHeight/2){
+      //   radius-=1;
+      // }
+
+      // if (radius === c.clientHeight/2){
+      //   clear();
+      //   window.cancelAnimationFrame(requestID);
+      //   growing = false;
+      // }
+
+
+  // }
+};
 
 
 
@@ -60,7 +88,7 @@ var drawDot = () => {
     window.requestAnimationFrame()
 
    */
-};
+
 
 
 //var stopIt = function() {
@@ -68,11 +96,7 @@ var stopIt = () => {
   console.log("stopIt invoked...")
   console.log(requestID);
 
-  if (requestID){
-    window.cancelAnimationFrame(requestID);
-  }
-
-  growing = false;
+  window.cancelAnimationFrame(requestID);
 
 };
 
