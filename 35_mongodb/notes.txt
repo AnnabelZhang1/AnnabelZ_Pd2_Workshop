@@ -1,0 +1,10 @@
+- MongoDB is a NoSql database, and rather store info in documents 
+- Document: a way ot organize and store data as a set of field-value pairs
+- Collection: an organized store of documents in mongodb, usually with common fields between documents
+- Field: a unique identifier for a specific datapoint (each field has a value associated with it)
+- Atlas allows the deployment of clusters (a group of servers that store your data)
+- Instance: a single macine locally or in te cloud, running) 
+- Replica Set: a few connected MongoDB instaces that store the same data (as backup)
+
+un: m001-student
+pw: m001-mongodb-basics
